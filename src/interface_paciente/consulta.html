@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta - MedIn</title>
+    <style>
+        /* Estilos globais */
+        body {
+            background-color: #f5f5f5; /* Fundo cinza claro uniforme, como na imagem */
+            font-family: Arial, Helvetica, sans-serif; /* Fonte limpa e sem serifa */
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            min-height: 100vh; /* Garante que o container centralizado tenha a altura da tela */
+        }
+
+        /* Container principal para centralizar e definir a largura simulada de uma tela móvel */
+        .main-container {
+            width: 100%;
+            max-width: 400px; /* Largura máxima típica para móveis */
+            padding: 20px; /* Preenchimento interno */
+        }
+
+        /* Lista de resultados com espaçamento vertical */
+        .results-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Espaço entre os cartões */
+        }
+
+        /* Estilo comum para os cartões de hospital */
+        .hospital-card {
+            background-color: #fff; /* Fundo branco do cartão */
+            border-radius: 10px; /* Borda arredondada */
+            padding: 20px; /* Preenchimento interno */
+            border-width: 2px; /* Espessura da borda */
+            border-style: solid; /* Tipo de borda */
+        }
+
+        /* Cores específicas das bordas */
+        .card-border-gold {
+            border-color: #fbc02d; /* Cor amarela/dourada para o primeiro cartão */
+        }
+
+        .card-border-grey {
+            border-color: #9e9e9e; /* Cor cinza para o segundo e terceiro cartões */
+        }
+
+        /* Estilo dos títulos dos hospitais */
+        .hospital-card h2 {
+            color: #006064; /* Teal escuro para o título, como na imagem */
+            font-size: 18px;
+            margin-top: 0; /* Remove margem superior padrão */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+            font-weight: bold; /* Negrito */
+        }
+
+        /* Estilo das linhas de detalhes */
+        .detail-line {
+            color: #00838f; /* Teal claro para os detalhes, como na imagem */
+            font-size: 14px;
+            margin: 0; /* Remove margens padrão */
+            margin-bottom: 5px; /* Espaço entre as linhas de detalhes */
+        }
+
+        /* Remove margem inferior da última linha de detalhes */
+        .detail-line:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Estilo da linha divisória horizontal cinza */
+        .divider {
+            height: 2px;
+            background-color: #9e9e9e;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="results-list">
+            <div class="hospital-card card-border-gold">
+                <h2>HOSPITAL X</h2>
+                <p class="detail-line">Vagas Disponíveis: 15</p>
+                <p class="detail-line">Endereço: Rua Alfredo, 15 - São Paulo</p>
+                <p class="detail-line">Distância De Você: 5Km</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="hospital-card card-border-grey">
+                <h2>HOSPITAL Z</h2>
+                <p class="detail-line">Vagas Disponíveis: 17</p>
+                <p class="detail-line">Endereço: Rua Venino, 15 - São Paulo</p>
+                <p class="detail-line">Distância De Você: 18Km</p>
+            </div>
+
+            <div class="hospital-card card-border-grey">
+                <h2>HOSPITAL Y</h2>
+                <p class="detail-line">Vagas Disponíveis: 5</p>
+                <p class="detail-line">Endereço: Rua Tarug, 15 - São Paulo</p>
+                <p class="detail-line">Distância De Você: 5Km</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
